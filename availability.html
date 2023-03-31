@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability</title>
+    <link rel="stylesheet" href="availability.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+<body>
+    <div class="login-box">
+        <h2>Food Availability</h2>
+        <form  class ="update" action="">
+            <div class="user-box">
+                <input type="text" name="cn" id="cn" required="" autocomplete ="off">
+                <label for="">Canteen name :</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="fin" id="fin" required="" autocomplete ="off">
+                <label for="">Food item name :</label> 
+            </div>
+            <div class="user-box">
+                <input type="text" name="sofi" id="sofi" required="" autocomplete ="off">
+                <label for="">Status of food item :</label>
+            </div>
+           <button id ="buton">Update</button>
+            
+        </form>
+    </div>
+</body>
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { getDatabase ,set,ref ,update,child,remove,get,push} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+    import { getFirestore,collection, addDoc,getDocs,deleteDoc,doc,query,where,orderBy,serverTimestamp,getDoc,onSnapshot,updateDoc} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js";
+    
+   
+   
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyCCqsEqT_0H3wXexOmlS9CmFNy4OmJy9hk",
+      authDomain: "canteen-live-status-77290.firebaseapp.com",
+      databaseURL: "https://canteen-live-status-77290-default-rtdb.firebaseio.com",
+      projectId: "canteen-live-status-77290",
+      storageBucket: "canteen-live-status-77290.appspot.com",
+      messagingSenderId: "615011554452",
+      appId: "1:615011554452:web:060c60f24a85b3fff89081",
+      measurementId: "G-Y6Q0M80LNX"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const database = getDatabase(app);
+    //updating a document
+
+const updateForm = document.querySelector('.update')
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef = doc(db,updateForm.cn.value,updateForm.fin.value);
+   
+    
+
+    updateDoc(docRef,{
+        Availability : updateForm.sofi.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</html>
+
+
+
+
+
+
+
+

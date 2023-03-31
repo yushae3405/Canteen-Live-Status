@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif;
+}
+
+#logo {
+  width: 50px;
+  margin-left:20px ;
+}
+.navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.full-pap {
+  height: 100%;
+  width: 100%;
+  
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+}
+/* navbar section  */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 30px;
+  padding-top: 50px;
+  position:relative;
+}
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 100px;
+}
+nav ul {
+  display: inline-block;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 70px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: 'Baloo Bhai 2', cursive;
+  padding: 3px 22px;
+  
+  border-radius:20px;
+}
+nav ul li button {
+  font-size: 20px;
+  color: white;
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-family: 'Baloo Bhai 2', cursive;
+  padding: 3px 22px;
+  border-radius:20px;
+}
+nav ul li button:hover {
+  color: black;
+  background-color: #fff;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: black;
+  background-color: #fff;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: palevioletred;
+  font-size: 28px;
+}
+/* login form  */
+
+#login-form {
+  display: none;
+  margin-left: 1070px;
+}
+.form-box {
+  width: 380px;
+  height: 480px;
+  position: relative;
+  margin: 2% auto;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  overflow: hidden;
+}
+.button-box {
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#btn {
+  top: 0;
+  left: 0;
+  position: absolute;
+  width: 110px;
+  height: 100%;
+  background: #f3c693;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.input-group-login {
+  top: 150px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-group-register {
+  top: 120px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: #f3c693;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.check-box {
+  margin: 30px 10px 34px 0;
+}
+span {
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+#login {
+  left: 50px;
+}
+#login input {
+  color: white;
+  font-size: 15;
+}
+#register {
+  left: 450px;
+}
+#register input {
+  color: white;
+  font-size: 15;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 624px;
+    justify-content: center;
+    align-items: center;
+}
+/* Home section */
+#home::before{ 
+    content: "";
+    position: absolute;
+    background: url('fooditem5.jpg') no-repeat center center/cover;
+    height: 642px;
+    top:0px;
+    left:0px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+.p-fix{
+  position: fixed;
+}
+
+#home h1{
+    color:white;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    font-size: 4rem;
+}
+
+#home p{
+    color:white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 2rem;
+    word-spacing: 0.8rem;
+}
+
+
+/* Canteen Section
+.canteens{
+  margin: 34px;
+  display: flex;
+}
+.canteens .box{
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 2px 85px;
+  border-radius: 28px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+
+.canteens .box img{ 
+ height: 160px;
+ margin: auto;
+ display: block;
+}
+
+.canteens .box p{
+  font-family: 'Bree Serif', serif;
+
+}  */
+/* Utility Classes */
+.h-primary{
+  font-family: 'Bree Serif', serif;
+  font-size: 3.8rem;
+  padding: 12px;
+  
+}
+
+.h-secondary{
+  font-family: 'Bree Serif', serif;
+  font-size: 2.3rem;
+  padding: 12px;
+}
+
+
+
+
+.center{
+  text-align: center;
+}
+
+
+/* signup form  */
+
+label{
+  height: 2px;
+}
+
+/* About Us  */
+
+#aboutus::before {
+  content:"";
+  position:absolute;
+  background: #e84343;
+  width: 100%;
+  height: 890px;
+  z-index:-1;
+  
+  background-size: cover;
+}
+#aboutus{
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+/* Contact Section */
+#contact{
+    position: relative;
+    margin-top: 0px;
+    z-index :1;
+    
+    
+    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 870px;
+    z-index: -1;
+     /* opacity: 0.8;  */
+    background: url('contactus1.jpg') no-repeat center center/cover;
+    
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+   color:white;
+
+}
+#contact h1{
+  padding:50px;
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px;
+    margin-bottom: 0px;
+}
+
+#contact-box form{
+  width:80%;
+}
+
+
+/* new canteens section  */
+body{
+  background:white;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.menu{
+  padding :0 10px 30px 10px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+  grid-gap: 20px 40px;
+}
+
+.heading{
+  background: red;
+  color :white;
+  margin-bottom: 30px;
+  padding : 30px 0;
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.heading>h1{
+  font-weight: 400;
+  font-size: 32px;
+  letter-spacing:10px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+
+}
+
+.heading>h3{
+  font-weight: 600;
+  font-style: 22px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+.food-items{
+  display:grid;
+  position:relative;
+  grid-template-rows: auto 1fr;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+  transition:.2s ease-in-out;
+  
+
+}
+
+.food-items img{
+  position :relative ;
+  width:100%;
+  height:280px;
+  border-radius: 15px 15px 0 0;
+  cursor : pointer;
+}
+
+h1{
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+.details{
+  padding :20px 10px ;
+  display:grid;
+  grid-template-rows: auto 1fr 50px;
+  grid-row-gap: 15px;
+
+}
+.details-sub{
+  display:grid;
+  grid-template-columns: auto auto;
+}
+.details-sub>h5{
+  font-weight: 600;
+  font-size: 18px;
+
+}
+
+.price{
+  text-align: right;
+}
+
+.details-p{
+  color:#6f6f6f;
+  font-size: 15px;
+  line-height: 28px;
+  font-weight: 400;
+  align-self: stretch;
+}
+
+.details>button {
+  background: #e84343;
+  border:none;
+  color:white;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  width:180px;
+  cursor:pointer;
+}
+.details>button  a{
+  color: white;
+}
+
+.details>button:hover{
+  background: #fc0101;
+}
+
+#menu1{
+  position: absolute;
+  top: 1100px;
+  left:600px;
+  width:450px;
+  background-color: #f3c693;
+
+}
+
+.popup-canteen{
+  background-color: #6fcfea;
+   position: fixed;
+   bottom: 1000px;
+   left: 380px;
+   
+   
+   display:none;
+   
+  
+   transform: scale(0.1);
+   box-shadow: 0 16px 12px 0 , 0 10px 15px 0 rgba(255,255,255,0.5);
+   transition: left 0.4s,transform 0.4s ;
+}
+
+.openPopUp{
+
+position:fixed;
+
+z-index: 1030;
+
+transform: scale(1);
+}
+.fullscr{
+  width: 100vw;
+  height: 100vh;
+}
+
+#text{
+  border-right: 0.15em solid brown;
+  animation: blink 0.75s step-end infinite;
+  width: max-content;
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: brown;
+  }
+}

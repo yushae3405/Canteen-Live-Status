@@ -1,0 +1,2304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canteen Live Status</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="upvote.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" media="screen and (max-width:1300px)" href="phones.css">
+</head>
+<body>
+  <div class="d-flex justify-content-center" id="g-p-c">
+  <div class="col-md-6 my-5 popup-canteen alert alert-warning alert-dismissible fade show"role="alert" id="getpop"  >
+    <button type="button" class="btn-close"  id="getpop-c" aria-label="Close"></button>
+   
+     
+      <table class="table table-striped">
+        
+          <thead>
+            <tr>
+              <th scope="col">SNo</th>
+              <th scope="col">Menu</th>
+              <th scope="col">Price</th>
+              <th scope="col">Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td >Tomato Soup</td>
+              <td>90</td>
+              <td id ="tomatosoup">Available</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td >Veg Noodles Soup</td>
+              <td >110</td>
+              <td id ="vegnoodlessoup">Available</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td >>Chicken Clear Soup</td>
+              <td >110</td>
+              <td id ="chickenclearsoup">Available</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td >Spring Roll</td>
+              <td>200</td>
+              <td  id ="springroll">Available</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td >Crispy Paneer</td>
+              <td >170</td>
+              <td id ="crispypaneer">Not Available</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td >Lolly Pop Dry</td>
+              <td>160</td>
+              <td id ="lollypopdry">Available</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td >Cheese Kabab</td>
+              <td>160</td>
+              <td id ="cheesekabab"> Not Available</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td >Paneer Tikka</td>
+              <td>160</td>
+              <td id ="paneertikka">Available</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td >Cheese Pakoda</td>
+              <td>90</td>
+              <td id ="cheesepakoda">Available</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td >Green Salad</td>
+              <td>80</td>
+              <td id ="greensalad">Available</td>
+            </tr>
+           
+          </tbody>
+        </table>
+      </div>
+      <div class="col-md-6 my-5 popup-canteen  alert alert-warning alert-dismissible fade show"role="alert"id="getpop2">
+        <button type="button" class="btn-close" id="getpop2-c" aria-label="Close"></button>
+          
+          <table class="table table-striped">
+             
+                     
+              <thead>
+                <tr>
+                  <th scope="col">SNo</th>
+                  <th scope="col">Menu</th>
+                  <th scope="col">Price</th>
+                  <th scope="col">Availability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">1</th>
+                  <td>Butter Chicken</td>
+                  <td>250</td>
+                  <td id ="butterchicken">Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">2</th>
+                  <td >Biryani</td>
+                  <td >200</td>
+                  <td id ="biryani">Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">3</th>
+                  <td >Masala Dosa</td>
+                  <td >50</td>
+                  <td id ="masaladosa">Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">4</th>
+                  <td >Tandoori Chicken</td>
+                  <td>140</td>
+                  <td  id ="tandoorichicken">Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">5</th>
+                  <td >Chole Bhature</td>
+                  <td >50</td>
+                  <td id ="cholebhature">Not Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">6</th>
+                  <td >Samosa</td>
+                  <td>10</td>
+                  <td id ="samosa">Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">7</th>
+                  <td >Aloo Paratha</td>
+                  <td>50</td>
+                  <td id ="alooparatha"> Not Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">8</th>
+                  <td >Palak Paneer</td>
+                  <td>150</td>
+                  <td id ="palakpaneer">Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">9</th>
+                  <td >Rogan Josh</td>
+                  <td>200</td>
+                  <td id ="roganjosh">Available</td>
+                </tr>
+                <tr>
+                  <th scope="row">10</th>
+                  <td >Pav Bhaji</td>
+                  <td>50</td>
+                  <td id ="pavbhaji">Available</td>
+                </tr>
+               
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6  popup-canteen alert alert-warning alert-dismissible fade show"role="alert" id="getpop3">
+            <button type="button" class="btn-close"  id="getpop3-c" aria-label="Close"></button>
+          
+              <table class="table table-striped">
+                 
+                         
+                  <thead>
+                    <tr>
+                      <th scope="col">SNo</th>
+                      <th scope="col">Menu</th>
+                      <th scope="col">Price</th>
+                      <th scope="col">Availability</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   
+                    <tr>
+                      <th scope="row">1</th>
+                      <td >Vada Pav</td>
+                      <td >10</td>
+                      <td id ="vadapav">Available</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td >Fish Curry</td>
+                      <td >200</td>
+                      <td id ="fishcurry">Available</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td >Mutton Biryani</td>
+                      <td>300</td>
+                      <td  id ="muttonbiryani">Available</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">4</th>
+                      <td >Aloo Gobi</td>
+                      <td >100</td>
+                      <td id ="aloogobi">Not Available</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">5</th>
+                      <td >Chicken Curry</td>
+                      <td>200</td>
+                      <td id ="chickencurry">Available</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">6</th>
+                      <td >Dal Makhani</td>
+                      <td>100</td>
+                      <td id ="dalmakhani"> Not Available</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">7</th>
+                      <td >Chana Masala</td>
+                      <td>100</td>
+                      <td id ="chanamasala">Available</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">8</th>
+                      <td >Keema Paratha</td>
+                      <td>80</td>
+                      <td id ="keemaparatha">Available</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">9</th>
+                      <td >Chicken korma</td>
+                      <td>250</td>
+                      <td id ="chickenkorma">Available</td>
+                    </tr>
+                   
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-6  popup-canteen   alert alert-warning alert-dismissible fade show"role="alert" id="getpop4">
+                <button type="button" class="btn-close" id="getpop4-c" aria-label="Close"></button>
+          
+                  <table class="table table-striped">
+                     
+                             
+                      <thead>
+                        <tr>
+                          <th scope="col">SNo</th>
+                          <th scope="col">Menu</th>
+                          <th scope="col">Price</th>
+                          <th scope="col">Availability</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td >Malai Kofta</td>
+                          <td>150</td>
+                          <td id ="malaikofta">Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td >Pani puri</td>
+                          <td >10</td>
+                          <td id ="panipuri">Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td >Chicken Fried Rice</td>
+                          <td >150</td>
+                          <td id ="chickenfriedrice">Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td >Tandoori Roti</td>
+                          <td>10</td>
+                          <td  id ="tandooriroti">Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td >Chilli Chicken</td>
+                          <td >200</td>
+                          <td id ="chillichicken">Not Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">6</th>
+                          <td >Papdi Chaat</td>
+                          <td>50</td>
+                          <td id ="papdichaat">Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">7</th>
+                          <td >Matar Paneer</td>
+                          <td>150</td>
+                          <td id ="matarpaneer"> Not Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">8</th>
+                          <td >Shahi Paneer</td>
+                          <td>150</td>
+                          <td id ="shahipaneer">Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">9</th>
+                          <td >Rasam</td>
+                          <td>50</td>
+                          <td id ="rasam">Available</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">10</th>
+                          <td >Dahi Vada</td>
+                          <td>50</td>
+                          <td id ="dahivada">Available</td>
+                        </tr>
+                       
+                      </tbody>
+                    </table>
+                  </div>
+
+
+                  <div class="col-md-6  popup-canteen alert alert-warning alert-dismissible fade show" role="alert" id="getpop5">
+                    <button type="button" class="btn-close" id="getpop5-c" aria-label="Close"></button>
+          
+                      <table class="table table-striped">
+                         
+                                 
+                          <thead>
+                            <tr>
+                              <th scope="col">SNo</th>
+                              <th scope="col">Menu</th>
+                              <th scope="col">Price</th>
+                              <th scope="col">Availability</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td >Chicken Chettinad</td>
+                              <td>250</td>
+                              <td id ="chickenchettinad">Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td >Mushroom Masala</td>
+                              <td >150</td>
+                              <td id ="mushroommasala">Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td >Uttapam</td>
+                              <td >50</td>
+                              <td id ="uttapam">Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">4</th>
+                              <td >Chicken 65</td>
+                              <td>200</td>
+                              <td  id ="chicken 65">Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">5</th>
+                              <td >Gobi Manchurian</td>
+                              <td >100</td>
+                              <td id ="gobimanchurian">Not Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">6</th>
+                              <td>Rasgulla</td>
+                              <td>10</td>
+                              <td id ="rasgulla">Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">7</th>
+                              <td >Chicken Kebab</td>
+                              <td>200</td>
+                              <td id ="chickenkebab"> Not Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">8</th>
+                              <td >Prawn Curry</td>
+                              <td>300</td>
+                              <td id ="prawncurry">Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">9</th>
+                              <td >Mutton Rogan Josh</td>
+                              <td>250</td>
+                              <td id ="muttonroganjosh">Available</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">10</th>
+                              <td >Chicken Tandoori</td>
+                              <td>200</td>
+                              <td id ="chickentandoori">Available</td>
+                            </tr>
+                           
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="col-md-6  popup-canteen  alert alert-warning alert-dismissible fade show" role="alert" id="getpop6">
+                        <button type="button" class="btn-close" id="getpop6-c" aria-label="Close"></button>
+          
+                          <table class="table table-striped">
+                             
+                                     
+                              <thead>
+                                <tr>
+                                  <th scope="col">SNo</th>
+                                  <th scope="col">Menu</th>
+                                  <th scope="col">Price</th>
+                                  <th scope="col">Availability</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td >Dum Aloo</td>
+                                  <td>100</td>
+                                  <td id ="dumaloo">Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td >Chicken Kofta</td>
+                                  <td >200</td>
+                                  <td id ="chickenkofta">Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td >Paratha</td>
+                                  <td >30</td>
+                                  <td id ="paratha">Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">4</th>
+                                  <td >Chicken Seekh Kebab</td>
+                                  <td>200</td>
+                                  <td  id ="chickenseekhkebab">Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">5</th>
+                                  <td >Malabar Fish Curry</td>
+                                  <td >300</td>
+                                  <td id ="malabarfishcurry">Not Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">6</th>
+                                  <td >Chicken Lollipop</td>
+                                  <td>10</td>
+                                  <td id ="chickenlollipop">Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">7</th>
+                                  <td >Aloo Matar</td>
+                                  <td>100</td>
+                                  <td id ="aloomatar">Not Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">8</th>
+                                  <td >Chicken Reshmi Kebab</td>
+                                  <td>200</td>
+                                  <td id ="chickenreshmikebab">Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">9</th>
+                                  <td >Sambar</td>
+                                  <td>50</td>
+                                  <td id ="sambar">Available</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">10</th>
+                                  <td >Mix Veg</td>
+                                  <td>200</td>
+                                  <td id ="mixveg">Available</td>
+                                </tr>
+                               
+                              </tbody>
+                            </table>
+                          </div>
+
+                          <div class="col-md-6  popup-canteen  alert alert-warning alert-dismissible fade show" role="alert" id="getpop7">
+                            <button type="button" class="btn-close" id="getpop7-c" aria-label="Close"></button>
+              
+                              <table class="table table-striped">
+                                 
+                                         
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">SNo</th>
+                                      <th scope="col">Menu</th>
+                                      <th scope="col">Price</th>
+                                      <th scope="col">Availability</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td >Filter Coffee</td>
+                                      <td>20</td>
+                                      <td id ="filtercoffee">Available</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">2</th>
+                                      <td >Masala Chai</td>
+                                      <td >20</td>
+                                      <td id ="masalachai">Available</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">3</th>
+                                      <td >Mango Lassi</td>
+                                      <td >50</td>
+                                      <td id ="mangolassi">Available</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">4</th>
+                                      <td >Jalebi</td>
+                                      <td>20</td>
+                                      <td  id ="jalebi">Available</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">5</th>
+                                      <td >Dahi Bhalla</td>
+                                      <td >50</td>
+                                      <td id ="dahibhalla">Not Available</td>
+                                    </tr>
+                                    
+                                   
+                                  </tbody>
+                                </table>
+                              </div>
+
+                              <div class="col-md-6  popup-canteen  alert alert-warning alert-dismissible fade show" role="alert" id="getpop8">
+                                <button type="button" class="btn-close" id="getpop8-c" aria-label="Close"></button>
+                  
+                                  <table class="table table-striped">
+                                     
+                                             
+                                      <thead>
+                                        <tr>
+                                          <th scope="col">SNo</th>
+                                          <th scope="col">Menu</th>
+                                          <th scope="col">Price</th>
+                                          <th scope="col">Availability</th>
+                                        </tr>
+                                      </thead>
+                                      <tbody>
+                                        <tr>
+                                          <th scope="row">1</th>
+                                          <td >Fried Rice</td>
+                                          <td>100</td>
+                                          <td id ="friedrice">Available</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">2</th>
+                                          <td >Mix Veg</td>
+                                          <td >100</td>
+                                          <td id ="mixveg">Available</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">3</th>
+                                          <td >Fries</td>
+                                          <td >80</td>
+                                          <td id ="fries">Available</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">4</th>
+                                          <td >Lassi</td>
+                                          <td>80</td>
+                                          <td  id ="lassi">Available</td>
+                                        </tr>
+                                        <tr>
+                                          <th scope="row">5</th>
+                                          <td >Idli</td>
+                                          <td >20</td>
+                                          <td id ="idli">Not Available</td>
+                                        </tr>
+                                        
+                                       
+                                      </tbody>
+                                    </table>
+                                  </div>
+
+                                  <div class="col-md-6  popup-canteen  alert alert-warning alert-dismissible fade show" role="alert" id="getpop9">
+                                    <button type="button" class="btn-close" id="getpop9-c" aria-label="Close"></button>
+                      
+                                      <table class="table table-striped">
+                                         
+                                                 
+                                          <thead>
+                                            <tr>
+                                              <th scope="col">SNo</th>
+                                              <th scope="col">Menu</th>
+                                              <th scope="col">Price</th>
+                                              <th scope="col">Availability</th>
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+                                              <th scope="row">1</th>
+                                              <td >Prawn Curry</td>
+                                              <td>200</td>
+                                              <td id ="friedrice">Available</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">2</th>
+                                              <td >Shahi Paneer</td>
+                                              <td >175</td>
+                                              <td id ="shahipaneer">Available</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">3</th>
+                                              <td >Dhokla</td>
+                                              <td >40</td>
+                                              <td id ="dhokla">Available</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">4</th>
+                                              <td >Bhakarwadi</td>
+                                              <td>80</td>
+                                              <td  id ="bhakarwadi">Available</td>
+                                            </tr>
+                                            <tr>
+                                              <th scope="row">5</th>
+                                              <td >Burger</td>
+                                              <td >55</td>
+                                              <td id ="burger">Not Available</td>
+                                            </tr>
+                                            
+                                           
+                                          </tbody>
+                                        </table>
+                                      </div>
+
+
+                                      <div class="col-md-6  popup-canteen  alert alert-warning alert-dismissible fade show" role="alert" id="getpop10">
+                                        <button type="button" class="btn-close" id="getpop10-c" aria-label="Close"></button>
+                          
+                                          <table class="table table-striped">
+                                             
+                                                     
+                                              <thead>
+                                                <tr>
+                                                  <th scope="col">SNo</th>
+                                                  <th scope="col">Menu</th>
+                                                  <th scope="col">Price</th>
+                                                  <th scope="col">Availability</th>
+                                                </tr>
+                                              </thead>
+                                              <tbody>
+                                                <tr>
+                                                  <th scope="row">1</th>
+                                                  <td >Rasgulla</td>
+                                                  <td>30</td>
+                                                  <td id ="rasgulla">Available</td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">2</th>
+                                                  <td >Curry</td>
+                                                  <td >75</td>
+                                                  <td id ="curry">Available</td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">3</th>
+                                                  <td >Fafda</td>
+                                                  <td >40</td>
+                                                  <td id ="fafda">Available</td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">4</th>
+                                                  <td >Bharwa Bengan</td>
+                                                  <td>100</td>
+                                                  <td  id ="bharwabengan">Available</td>
+                                                </tr>
+                                                <tr>
+                                                  <th scope="row">5</th>
+                                                  <td >Dal Chawal</td>
+                                                  <td >60</td>
+                                                  <td id ="dalchawal">Not Available</td>
+                                                </tr>
+                                                
+                                               
+                                              </tbody>
+                                            </table>
+                                          </div>
+
+
+                                          <div class="col-md-6  popup-canteen  alert alert-warning alert-dismissible fade show" role="alert" id="getpop11">
+                                            <button type="button" class="btn-close" id="getpop11-c" aria-label="Close"></button>
+                              
+                                              <table class="table table-striped">
+                                                 
+                                                         
+                                                  <thead>
+                                                    <tr>
+                                                      <th scope="col">SNo</th>
+                                                      <th scope="col">Menu</th>
+                                                      <th scope="col">Price</th>
+                                                      <th scope="col">Availability</th>
+                                                    </tr>
+                                                  </thead>
+                                                  <tbody>
+                                                    <tr>
+                                                      <th scope="row">1</th>
+                                                      <td >Uttapam</td>
+                                                      <td>30</td>
+                                                      <td id ="uttapam">Available</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th scope="row">2</th>
+                                                      <td >Mushroom Masala</td>
+                                                      <td >125</td>
+                                                      <td id ="mushroommasala">Available</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th scope="row">3</th>
+                                                      <td >Bharwa Bhindi</td>
+                                                      <td >70</td>
+                                                      <td id ="bharwabhindi">Available</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th scope="row">4</th>
+                                                      <td >Aalo Tamatar</td>
+                                                      <td>100</td>
+                                                      <td  id ="aalotamatar">Available</td>
+                                                    </tr>
+                                                    <tr>
+                                                      <th scope="row">5</th>
+                                                      <td >Kadhai Paneer</td>
+                                                      <td >150</td>
+                                                      <td id ="kadhaipaneer">Not Available</td>
+                                                    </tr>
+                                                    
+                                                   
+                                                  </tbody>
+                                                </table>
+                                              </div>
+    
+  
+
+
+  
+  
+
+
+  
+    </div>
+    <div class="full-page">
+        <div class="navbar">
+             
+                <div>
+                    <button class="btn btn-danger" data-target="#mymodelll" data-toggle ="modal">Log Out</button>
+                    <div class = "modal fade" id = "mymodelll">
+                        <div class = "modal-dialog modal-dialog-centered">
+                            <div class = "modal-content">
+                                <div class = "modal-header">
+                                    <h3 class = " text-primary">Logout</h3>
+                                    
+                                    
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+        
+        
+        
+        
+        
+                                </div>
+                                <div class ="modal-body">
+                                    <h6>Are you sure you want to log out?</h6>
+                               </div>                         
+                               <div class ="modal-footer justify-content-center" >
+                                <button id = "logout" class = "btn btn-danger  " data-dismiss="modal" >LOG OUT</button>
+        
+                               </div>
+        
+                             </div>
+        
+        
+                        </div>
+        
+        
+        
+                    </div>
+        
+        
+        
+                </div>
+        
+                
+            
+            
+            <nav>
+                <ul id='MenuItems'>
+                    <li><a href='#home'>Home</a></li>
+                    <li><a href='#canteen-container'>Canteens</a></li>
+                    <li><a href='#aboutus'>About</a></li>
+                    <li><a href='#contact'>Contact</a></li>
+                    
+
+                    
+                    
+
+                    
+                </ul>
+            </nav>
+           
+
+            <div>
+                <img style = "height :70px;width:70px" id ="logo" data-toggle="tooltip"data-placement="left" title="Savory Corner" src="logo.jpg" alt="error">
+            </div>
+        </div>
+        
+    
+        
+    
+        
+           
+    <section id="home">
+        <h1 class="h-primary" id ="text"></h1>
+        <p>Find the best canteens and delicious </p>
+        <p> food nearby</p>
+    </section>
+
+
+    <section style = "font-family: 'Poppins', sans-serif;" id="canteen-container">
+        <div class= "menu" id="addCanteen">
+            <div class = "heading">
+                <h1>Refectory</h1>
+                <h3>&mdash;Canteens&mdash;</h3>
+
+            </div>
+            
+            <div class = "food-items">
+                <img src="canteens1.jpg" id="getData" data-toggle="tooltip"data-placement="left" title="Food Court" alt="">
+                <div class = "details">
+                    <div class = "details-sub">
+                        <h5>Food Court</h5>
+                        <h5 id ="statuss1" class = "price">OPEN</h5>
+                        
+
+                    </div>
+                    <p>This canteen offers a diverse menu of delectable dishes to suit all tastes. The atmosphere is cozy and inviting, with warm lighting and comfortable seating. </p>
+                    <div style ="margin-left : 375px;padding-bottom:0px;"> 
+                        <p style="padding-left: 12px;" id ="votesu">0</p>
+                       <button style="background: white;border-color:white;" data-toggle="tooltip" data-placement="bottom" title="like" id ="votesuu" class="upvote" ><img style ="height: 30px;" src="thumbsup.jpg" alt="Upvote"></button>
+                        
+
+                        
+                    </div>
+                    
+                    
+                   
+                    <button id="pop-menu"><a>Menu</a></button>
+                    <button><a style = "text-decoration: none;"  href="http://127.0.0.1:5500/indexx.html">Reviews</a></button>
+                    
+                    
+                    
+                </div>
+                
+
+
+            </div>
+            <div class = "food-items">
+                <img src="canteens2.jpg" data-toggle="tooltip"data-placement="left" title="Mess Hall" alt="">
+                <div class = "details">
+                    <div class = "details-sub">
+                        <h5>Mess Hall</h5>
+                        <h5  id ="statuss2" class = "price">OPEN</h5>
+
+                    </div>
+                    
+                    <p>Our canteen offers a delightful culinary experience, with a diverse menu of carefully crafted dishes and a warm, welcoming atmosphere that will make you feel right at home.</p>
+                    <div style ="margin-left : 375px;padding-bottom:0px;"> 
+                        <p style="padding-left: 12px;" id ="votesu2">0</p>
+                        <button style="background: white;border-color:white;" data-toggle="tooltip"data-placement="bottom" title="like" id ="votesuu2" class="upvote"><img style ="height: 30px;" src="thumbsup.jpg" alt="Upvote"></button>
+                        
+                    </div>
+                    <button id="pop-menu2" ><a>Menu</a></button>
+                    <button><a style = "text-decoration: none;"  href="http://127.0.0.1:5500/indexx2.html">Reviews</a></button>
+                </div>
+                         
+            </div>
+            
+            <div class = "food-items">
+                <img src="canteens3.jpeg" data-toggle="tooltip"data-placement="left" title="The Greenhouse" alt="">
+                <div class = "details">
+                    <div class = "details-sub">
+                        <h5>The Greenhouse</h5>
+                        <h5  id ="statuss3" class = "price">OPEN</h5>
+
+                    </div>
+                    <p>From farm-to-table ingredients to expertly prepared food, our canteen prides itself on delivering exceptional quality and flavor in every bite and sip, making it a must-visit destination for foodies.</p>
+                    <div style ="margin-left : 375px;padding-bottom:0px;"> 
+                        <p style="padding-left: 12px;" id ="votesu3">0</p>
+                        <button style="background: white;border-color:white;"data-toggle="tooltip"data-placement="bottom" title="like" id ="votesuu3" class="upvote"  ><img style ="height: 30px;" src="thumbsup.jpg" alt="Upvote"></button>
+                        
+                    </div>
+                    <button id="pop-menu3" ><a>Menu</a></button>
+                    <button><a style = "text-decoration: none;"  href="http://127.0.0.1:5500/indexx3.html">Reviews</a></button>
+                </div>
+
+
+            </div>
+            <div class = "food-items">
+                <img src="canteen4.jpg" data-toggle="tooltip"data-placement="left" title="The Snack Shack" alt="">
+                <div class = "details">
+                    <div class = "details-sub">
+                        <h5>The Snack Shack</h5>
+                        <h5  id ="statuss4" class = "price">OPEN</h5>
+
+                    </div>
+                    <p>From the cozy ambiance to the impeccable service, this canteen sets the bar high for an unforgettable dining experience.</p>
+                    <div style ="margin-left : 375px;padding-bottom:0px;"> 
+                        <p style="padding-left: 12px;" id ="votesu4">0</p>
+                        <button style="background: white;border-color:white;"data-toggle="tooltip"data-placement="bottom" title="like" id ="votesuu4" class="upvote"  ><img style ="height: 30px;" src="thumbsup.jpg" alt="Upvote"></button>
+                        
+                    </div>
+                    <button id="pop-menu4" ><a>Menu</a></button>
+                    <button><a style = "text-decoration: none;"  href="http://127.0.0.1:5500/indexx4.html">Reviews</a></button>
+                </div>
+
+
+            </div>
+            <div class = "food-items">
+                <img src="canteen5.jpg" data-toggle="tooltip"data-placement="left" title="The Bistro" alt="">
+                <div class = "details">
+                    <div class = "details-sub">
+                        <h5>The Bistro</h5>
+                        <h5  id ="statuss5" class = "price">OPEN</h5>
+
+                    </div>
+                    <p>The food at this canteen is an experience in itself - every bite is bursting with flavor and creativity.The attention to detail and passion for food and hospitality is evident in every aspect of this canteen, making it a must-visit for foodies</p>
+                    <div style ="margin-left : 375px;padding-bottom:0px;"> 
+                        <p style="padding-left: 12px;" id ="votesu5">0</p>
+                        <button style="background: white;border-color:white;"data-toggle="tooltip"data-placement="bottom" title="like" id ="votesuu5" class="upvote"  ><img style ="height: 30px;" src="thumbsup.jpg" alt="Upvote"></button>
+                        
+                    </div>
+                    <button id="pop-menu5" ><a>Menu</a></button>
+                    <button><a style = "text-decoration: none;"  href="http://127.0.0.1:5500/indexx5.html">Reviews</a></button>
+                </div>
+
+
+            </div>
+            <div class = "food-items">
+                <img src="canteen9.jpg" data-toggle="tooltip"data-placement="left" title="The Cafe" alt="">
+                <div class = "details">
+                    <div class = "details-sub">
+                        <h5>The Cafe</h5>
+                        <h5  id ="statuss6" class = "price">OPEN</h5>
+
+                    </div>
+                    <p>This canteen consistently delivers exceptional food, whether you're looking for a casual lunch or a formal dinner</p>
+                    <div style ="margin-left : 375px;padding-bottom:0px;"> 
+                        <p style="padding-left: 12px;" id ="votesu6">0</p>
+                        <button style="background: white;border-color:white;"data-toggle="tooltip"data-placement="bottom" title="like" id ="votesuu6" class="upvote" ><img style ="height: 30px;" src="thumbsup.jpg" alt="Upvote"></button>
+                        
+                    </div>
+                    <button id="pop-menu6" ><a>Menu</a></button>
+                    <button><a style = "text-decoration: none;"  href="http://127.0.0.1:5500/indexx6.html">Reviews</a></button>
+                </div>
+
+
+            </div>
+
+
+            
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+    </section>
+    
+
+   
+
+           
+    <section  id = "aboutus" >
+      
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="menu.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="canteen.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="story.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        
+         
+        
+
+    </section> 
+    <section id="contact">
+        <h1 style ="color:white;"class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form id = "Query" action="">
+                <div class="form-group">
+                    <label for="name">Name:   </label>
+                    <input type="text" name="name" id="Username" data-toggle="tooltip"data-placement="left" title="Enter full name " placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="Email"  data-toggle="tooltip"data-placement="left" title="Enter email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="Phone_no" data-toggle="tooltip"data-placement="left" title="Enter valid phone number" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:     </label>
+                    <textarea name="message" id="query" data-toggle="tooltip"data-placement="left" title="Enter query" cols="30" rows="10"></textarea>
+                </div>
+                <button style =" border-width: 3px;font-weight: bolder; " class="btn btn-outline-primary"data-toggle="tooltip"data-placement="left" title="Post query">Post Query</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div style="margin-bottom:0;" class="center">
+            Copyright &copy; www.savorycorner.com. All rights reserved!
+        </div>
+    </footer>
+    
+
+    </section>
+
+
+   
+
+
+
+	
+    
+    
+    <script src="upvote.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script type ="module" src="app2.js"></script>
+
+    <script type="module">
+       
+       
+       
+       import { getDatabase,set ,ref,push , child ,onValue } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+       
+        import {  signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+
+        import { getFirestore,collection, addDoc} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js";
+      
+        
+      </script>
+      <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        import { getDatabase ,set,ref,get,child ,update} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword,signInWithEmailAndPassword,onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+        import { getFirestore,collection, addDoc,getDocs,deleteDoc,doc,query,where,orderBy,serverTimestamp,getDoc,onSnapshot,setDoc} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js";
+       
+
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCCqsEqT_0H3wXexOmlS9CmFNy4OmJy9hk",
+          authDomain: "canteen-live-status-77290.firebaseapp.com",
+          databaseURL: "https://canteen-live-status-77290-default-rtdb.firebaseio.com",
+          projectId: "canteen-live-status-77290",
+          storageBucket: "canteen-live-status-77290.appspot.com",
+          messagingSenderId: "615011554452",
+          appId: "1:615011554452:web:060c60f24a85b3fff89081",
+          measurementId: "G-Y6Q0M80LNX"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+        const database = getDatabase(app);
+        const auth = getAuth(app);
+        const dbRef = ref(database);
+       
+
+    const user = auth.currentUser;
+
+
+const txtFull = "Welcome to Savory Corner"; 
+const txtArr = txtFull.split("");
+
+function getRandomTime() {
+  return Math.random() * 0.5;
+}
+function getEle(id) {
+  return document.getElementById("text");
+}
+function ModifyTxt(el, txt) {
+  return (el.innerHTML = txt);
+}
+
+
+
+function writeOut(txtArr, curChar = 0) {
+  const randomTime = getRandomTime();
+  setTimeout(
+    () => {
+      const el = getEle("text");
+      let elTxt = el.innerHTML;
+      elTxt += txtArr[curChar];
+      ModifyTxt(el, elTxt);
+      //check if next iteration is out of range
+      if (curChar + 1 == txtArr.length) {
+        return deleteOut(txtArr, txtArr.length);
+      }
+      return writeOut(txtArr, curChar + 1);
+    },
+
+    randomTime * 1000
+  );
+}
+function deleteOut(txtArr, curChar = 0) {
+  const randomTime = getRandomTime();
+  setTimeout(
+    () => {
+      const el = getEle("text");
+      let elTxt = el.innerHTML;
+      //remove
+      const elTxtArr = elTxt.split("");
+      const elTxtArrLen = elTxtArr.length;
+      console.log(elTxtArr.length - 1);
+      const newElTxt = elTxtArr.splice(0, curChar - 1).join("");
+      ModifyTxt(el, newElTxt);
+      if (elTxtArrLen == 0) {
+        return writeOut(txtArr, 0);
+      }
+      return deleteOut(txtArr, elTxtArrLen - 1);
+    },
+
+    randomTime * 1000
+  );
+  return;
+}
+writeOut(txtArr);
+
+
+
+
+
+
+
+
+
+
+    onAuthStateChanged(auth,(user)=>{
+    if (!user){
+        location.replace("index.html");
+       
+      
+       
+    }
+    else{
+      const uid = user.uid;
+      var counteru =  0;
+      var counteru2 = 0;
+      var counteru3 = 0;
+      var counteru4 = 0;
+      var counteru5 = 0;
+      var counteru6 = 0;
+      
+     
+     document.getElementById("votesuu").addEventListener('click',function(){
+    if( counteru==0){
+        
+        
+        counteru++;
+
+        }
+        else if(counteru == 1) {
+            counteru--;
+    
+        }
+
+        setDoc(doc(db,"FoodCourt",uid),{
+           Vote:counteru,
+          })
+          .then(()=>{
+            const colRef = collection(db,'FoodCourt');
+        getDocs(colRef)
+         .then((snapshot) =>{
+        let votes =[]
+        snapshot.docs.forEach((doc)=>{
+            votes.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes.length;i++){
+                  
+                     c1 = c1 + votes[i].Vote;
+                   }
+                   document.getElementById('votesu').innerHTML = c1;
+                  
+                               
+});            
+          })
+        });
+
+        
+        document.getElementById("votesuu2").addEventListener('click',function(){
+    if( counteru2==0){
+        
+        
+        counteru2++;
+
+        }
+        else if(counteru2 == 1) {
+            counteru2--;
+    
+        }
+
+        setDoc(doc(db,"MessHall",uid), {
+           Vote:counteru2,
+          })
+          .then(()=>{
+            const colRef2 = collection(db,'MessHall');
+           getDocs(colRef2)
+             .then((snapshot) =>{
+        let votes2 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes2.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes2.length;i++){
+                  
+                     c1 = c1 + votes2[i].Vote;
+                   }
+                   document.getElementById('votesu2').innerHTML = c1;
+                  
+                               
+});            
+          })
+        });
+
+
+
+        document.getElementById("votesuu3").addEventListener('click',function(){
+    if( counteru3==0){
+        
+        
+        counteru3++;
+
+        }
+        else if(counteru3 == 1) {
+            counteru3--;
+    
+        }
+
+        setDoc(doc(db,"TheGreenhouse",uid), {
+           Vote:counteru3,
+          })
+          .then(()=>{
+            const colRef3 = collection(db,'TheGreenhouse');
+           getDocs(colRef3)
+             .then((snapshot) =>{
+        let votes3 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes3.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes3.length;i++){
+                  
+                     c1 = c1 + votes3[i].Vote;
+                   }
+                   document.getElementById('votesu3').innerHTML = c1;
+                  
+                               
+});            
+          })
+        });
+
+        document.getElementById("votesuu4").addEventListener('click',function(){
+    if( counteru4==0){
+        
+        
+        counteru4++;
+
+        }
+        else if(counteru4 == 1) {
+            counteru4--;
+    
+        }
+
+        setDoc(doc(db,"TheSnackShack",uid), {
+           Vote:counteru4,
+          })
+          .then(()=>{
+            const colRef4 = collection(db,'TheSnackShack');
+           getDocs(colRef4)
+             .then((snapshot) =>{
+        let votes4 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes4.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes4.length;i++){
+                  
+                     c1 = c1 + votes4[i].Vote;
+                   }
+                   document.getElementById('votesu4').innerHTML = c1;
+                  
+                               
+});            
+          })
+        });
+
+        document.getElementById("votesuu5").addEventListener('click',function(){
+    if( counteru5==0){
+        
+        
+        counteru5++;
+
+        }
+        else if(counteru5 == 1) {
+            counteru5--;
+    
+        }
+
+        setDoc(doc(db,"TheBistro",uid), {
+           Vote:counteru5,
+          })
+          .then(()=>{
+            const colRef5 = collection(db,'TheBistro');
+           getDocs(colRef5)
+             .then((snapshot) =>{
+        let votes5 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes5.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes5.length;i++){
+                  
+                     c1 = c1 + votes5[i].Vote;
+                   }
+                   document.getElementById('votesu5').innerHTML = c1;
+                  
+                               
+});            
+          })
+        });
+
+
+        document.getElementById("votesuu6").addEventListener('click',function(){
+        if( counteru6==0){
+        
+        
+        counteru6++;
+
+        }
+        else if(counteru6== 1) {
+            counteru6--;
+    
+        }
+
+        setDoc(doc(db,"TheCafe",uid), {
+           Vote:counteru6,
+          })
+          .then(()=>{
+            const colRef6 = collection(db,'TheCafe');
+           getDocs(colRef6)
+             .then((snapshot) =>{
+        let votes6 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes6.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes6.length;i++){
+                  
+                     c1 = c1 + votes6[i].Vote;
+                   }
+                  document.getElementById('votesu6').innerHTML = c1;
+                  
+                               
+});            
+          })
+        });
+
+
+
+
+        
+      }
+    });
+
+       
+
+function getalldata(){
+  const colRef1 = collection(db,'FoodCourt');
+  getDocs(colRef1)
+    .then((snapshot) =>{
+        let votes =[]
+        snapshot.docs.forEach((doc)=>{
+            votes.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes.length;i++){
+                  
+                     c1 = c1 + votes[i].Vote;
+                   }
+                   document.getElementById('votesu').innerHTML = c1;
+                  
+                  
+
+        
+                  
+});
+}
+window.onload = getalldata();
+
+
+function getalldata2(){
+  const colRef2 = collection(db,'MessHall');
+  getDocs(colRef2)
+    .then((snapshot) =>{
+        let votes2 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes2.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes2.length;i++){
+                  
+                     c1 = c1 + votes2[i].Vote;
+                   }
+                   document.getElementById('votesu2').innerHTML = c1;
+                  
+                  
+
+        
+                  
+});
+}
+
+window.onload = getalldata2(); 
+
+
+
+function getalldata3(){
+  const colRef3 = collection(db,'TheGreenhouse');
+  getDocs(colRef3)
+    .then((snapshot) =>{
+        let votes3 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes3.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes3.length;i++){
+                  
+                     c1 = c1 + votes3[i].Vote;
+                   }
+                   document.getElementById('votesu3').innerHTML = c1;
+                  
+
+        
+                  
+});
+}
+
+
+window.onload = getalldata3(); 
+
+
+
+function getalldata4(){
+  const colRef4 = collection(db,'TheSnackShack');
+  getDocs(colRef4)
+    .then((snapshot) =>{
+        let votes4 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes4.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes4.length;i++){
+                  
+                     c1 = c1 + votes4[i].Vote;
+                   }
+                   document.getElementById('votesu4').innerHTML = c1;
+                  
+                  
+
+        
+                  
+});
+}
+
+window.onload = getalldata4(); 
+
+
+
+function getalldata5(){
+  const colRef5 = collection(db,'TheBistro');
+  getDocs(colRef5)
+    .then((snapshot) =>{
+        let votes5 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes5.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes5.length;i++){
+                  
+                     c1 = c1 + votes5[i].Vote;
+                   }
+                   document.getElementById('votesu5').innerHTML = c1;
+                  
+                  
+
+        
+                  
+});
+}
+
+window.onload = getalldata5(); 
+
+
+
+function getalldata6(){
+  const colRef6 = collection(db,'TheCafe');
+  getDocs(colRef6)
+    .then((snapshot) =>{
+        let votes6 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes6.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes6.length;i++){
+                  
+                     c1 = c1 + votes6[i].Vote;
+                   }
+                   document.getElementById('votesu6').innerHTML = c1;
+                  
+                  
+
+        
+                  
+});
+}
+
+window.onload = getalldata6(); 
+
+
+
+$('body').tooltip({
+        selector: '[data-toggle="tooltip"], [title]:not([data-toggle="popover"])',
+        trigger: 'hover',
+        container: 'body'
+    }).on('click mousedown mouseup', '[data-toggle="tooltip"], [title]:not([data-toggle="popover"])', function () {
+        $('[data-toggle="tooltip"], [title]:not([data-toggle="popover"])').tooltip('destroy');
+    });
+
+logout.addEventListener('click',(e)=>{
+    signOut(auth).then(() => {
+  // Sign-out successful.
+  alert('user logged out');
+}).catch((error) => {
+  // An error happened.
+  const errorCode = error.code;
+    const errorMessage = error.message;
+    alert(errorMessage);
+});
+
+});
+
+
+
+// get collection data of canteen 1 
+const docRef = doc(db,'status1','Food Court');
+onSnapshot(docRef,(doc)=>
+{
+    document.getElementById('statuss1').innerHTML = (doc.data().statusss1);
+})
+
+
+const docRef2 = doc(db,'status2','Mess Hall');
+onSnapshot(docRef2,(doc)=>
+{
+    document.getElementById('statuss2').innerHTML = (doc.data().statusss2);
+})
+
+const docRef3 = doc(db,'status3','The Greenhouse');
+onSnapshot(docRef3,(doc)=>
+{
+    document.getElementById('statuss3').innerHTML = (doc.data().statusss3);
+})
+
+
+const docRef4 = doc(db,'status4','The Snack Shack');
+onSnapshot(docRef4,(doc)=>
+{
+    document.getElementById('statuss4').innerHTML = (doc.data().statusss4);
+})
+
+const docRef5 = doc(db,'status5','The Bistro');
+onSnapshot(docRef5,(doc)=>
+{
+    document.getElementById('statuss5').innerHTML = (doc.data().statusss5);
+})
+
+const docRef6 = doc(db,'status6','The Cafe');
+onSnapshot(docRef6,(doc)=>
+{
+    document.getElementById('statuss6').innerHTML = (doc.data().statusss6);
+})
+
+
+
+
+
+
+
+// availability of items 
+const docRef7 = doc(db,'Food Court','Cheese Kabab');
+onSnapshot(docRef7,(doc)=>
+{
+    document.getElementById('cheesekabab').innerHTML = (doc.data().Availability);
+})
+
+const docRef8 = doc(db,'Food Court','Cheese Pakoda');
+onSnapshot(docRef8,(doc)=>
+{
+    document.getElementById('cheesepakoda').innerHTML = (doc.data().Availability);
+})
+
+const docRef9 = doc(db,'Food Court','Chicken Clear Soup');
+onSnapshot(docRef9,(doc)=>
+{
+    document.getElementById('chickenclearsoup').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef10 = doc(db,'Food Court','Crispy Paneer');
+onSnapshot(docRef10,(doc)=>
+{
+    document.getElementById('crispypaneer').innerHTML = (doc.data().Availability);
+})
+
+const docRef11 = doc(db,'Food Court','Green Salad');
+onSnapshot(docRef11,(doc)=>
+{
+    document.getElementById('greensalad').innerHTML = (doc.data().Availability);
+})
+
+const docRef12 = doc(db,'Food Court','Lolly Pop Dry');
+onSnapshot(docRef12,(doc)=>
+{
+    document.getElementById('lollypopdry').innerHTML = (doc.data().Availability);
+})
+
+const docRef13 = doc(db,'Food Court','Paneer Tikka');
+onSnapshot(docRef13,(doc)=>
+{
+    document.getElementById('paneertikka').innerHTML = (doc.data().Availability);
+})
+
+const docRef14 = doc(db,'Food Court','Spring Roll');
+onSnapshot(docRef14,(doc)=>
+{
+    document.getElementById('springroll').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef15 = doc(db,'Food Court','Tomato Soup');
+onSnapshot(docRef15,(doc)=>
+{
+    document.getElementById('tomatosoup').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef16 = doc(db,'Food Court','Veg Noodles Soup');
+onSnapshot(docRef16,(doc)=>
+{
+    document.getElementById('vegnoodlessoup').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef17 = doc(db,'Mess Hall','Butter Chicken');
+onSnapshot(docRef17,(doc)=>
+{
+    document.getElementById('butterchicken').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef18 = doc(db,'Mess Hall','Biryani');
+onSnapshot(docRef18,(doc)=>
+{
+    document.getElementById('biryani').innerHTML = (doc.data().Availability);
+})
+
+
+
+const docRef19 = doc(db,'Mess Hall','Masala Dosa');
+onSnapshot(docRef19,(doc)=>
+{
+    document.getElementById('masaladosa').innerHTML = (doc.data().Availability);
+})
+
+
+
+const docRef20 = doc(db,'Mess Hall','Tandoori Chicken');
+onSnapshot(docRef20,(doc)=>
+{
+    document.getElementById('tandoorichicken').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef21 = doc(db,'Mess Hall','Chole Bhature');
+onSnapshot(docRef21,(doc)=>
+{
+    document.getElementById('cholebhature').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef22 = doc(db,'Mess Hall','Samosa');
+onSnapshot(docRef22,(doc)=>
+{
+    document.getElementById('samosa').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef23 = doc(db,'Mess Hall','Aloo Paratha');
+onSnapshot(docRef23,(doc)=>
+{
+    document.getElementById('alooparatha').innerHTML = (doc.data().Availability);
+})
+
+const docRef24 = doc(db,'Mess Hall','Palak Paneer');
+onSnapshot(docRef24,(doc)=>
+{
+    document.getElementById('palakpaneer').innerHTML = (doc.data().Availability);
+})
+
+const docRef25 = doc(db,'Mess Hall','Palak Paneer');
+onSnapshot(docRef25,(doc)=>
+{
+    document.getElementById('palakpaneer').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef26 = doc(db,'Mess Hall','Rogan Josh');
+onSnapshot(docRef26,(doc)=>
+{
+    document.getElementById('roganjosh').innerHTML = (doc.data().Availability);
+})
+
+const docRef27 = doc(db,'Mess Hall','Pav Bhaji');
+onSnapshot(docRef27,(doc)=>
+{
+    document.getElementById('pavbhaji').innerHTML = (doc.data().Availability);
+})
+
+
+
+const docRef29 = doc(db,'The Greenhouse','Vada Pav');
+onSnapshot(docRef29,(doc)=>
+{
+    document.getElementById('vadapav').innerHTML = (doc.data().Availability);
+})
+
+const docRef30 = doc(db,'The Greenhouse','Fish Curry');
+onSnapshot(docRef30,(doc)=>
+{
+    document.getElementById('fishcurry').innerHTML = (doc.data().Availability);
+})
+
+const docRef31 = doc(db,'The Greenhouse','Mutton Biryani');
+onSnapshot(docRef31,(doc)=>
+{
+    document.getElementById('muttonbiryani').innerHTML = (doc.data().Availability);
+})
+
+const docRef32 = doc(db,'The Greenhouse','Aloo Gobi');
+onSnapshot(docRef32,(doc)=>
+{
+    document.getElementById('aloogobi').innerHTML = (doc.data().Availability);
+})
+
+const docRef33 = doc(db,'The Greenhouse','Chicken korma');
+onSnapshot(docRef33,(doc)=>
+{
+    document.getElementById('chickenkorma').innerHTML = (doc.data().Availability);
+})
+
+const docRef34 = doc(db,'The Greenhouse','Chicken Curry');
+onSnapshot(docRef34,(doc)=>
+{
+    document.getElementById('chickencurry').innerHTML = (doc.data().Availability);
+})
+
+const docRef35 = doc(db,'The Greenhouse','Dal Makhani');
+onSnapshot(docRef35,(doc)=>
+{
+    document.getElementById('dalmakhani').innerHTML = (doc.data().Availability);
+})
+
+const docRef36 = doc(db,'The Greenhouse','Chana Masala');
+onSnapshot(docRef36,(doc)=>
+{
+    document.getElementById('chanamasala').innerHTML = (doc.data().Availability);
+})
+
+const docRef37 = doc(db,'The Greenhouse','Keema Paratha');
+onSnapshot(docRef37,(doc)=>
+{
+    document.getElementById('keemaparatha').innerHTML = (doc.data().Availability);
+})
+
+const docRef38 = doc(db,'The Snack Shack','Malai Kofta');
+onSnapshot(docRef38,(doc)=>
+{
+    document.getElementById('malaikofta').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef39 = doc(db,'The Snack Shack','Pani Puri');
+onSnapshot(docRef39,(doc)=>
+{
+    document.getElementById('panipuri').innerHTML = (doc.data().Availability);
+})
+
+const docRef40 = doc(db,'The Snack Shack','Chicken Fried Rice');
+onSnapshot(docRef40,(doc)=>
+{
+    document.getElementById('chickenfriedrice').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef41 = doc(db,'The Snack Shack','Tandoori Roti');
+onSnapshot(docRef41,(doc)=>
+{
+    document.getElementById('tandooriroti').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef42 = doc(db,'The Snack Shack','Chilli Chicken');
+onSnapshot(docRef42,(doc)=>
+{
+    document.getElementById('chillichicken').innerHTML = (doc.data().Availability);
+})
+
+const docRef43 = doc(db,'The Snack Shack','Papdi Chaat');
+onSnapshot(docRef43,(doc)=>
+{
+    document.getElementById('papdichaat').innerHTML = (doc.data().Availability);
+})
+
+const docRef44 = doc(db,'The Snack Shack','Shahi Paneer');
+onSnapshot(docRef44,(doc)=>
+{
+    document.getElementById('shahipaneer').innerHTML = (doc.data().Availability);
+})
+
+
+const docRef45 = doc(db,'The Snack Shack','Rasam');
+onSnapshot(docRef45,(doc)=>
+{
+    document.getElementById('rasam').innerHTML = (doc.data().Availability);
+})
+
+const docRef46 = doc(db,'The Snack Shack','Dahi Vada');
+onSnapshot(docRef46,(doc)=>
+{
+    document.getElementById('dahivada').innerHTML = (doc.data().Availability);
+})
+
+const docRef47 = doc(db,'The Snack Shack','Matar Paneer');
+onSnapshot(docRef47,(doc)=>
+{
+    document.getElementById('matarpaneer').innerHTML = (doc.data().Availability);
+})
+
+const docRef48 = doc(db,'The Bistro','Chicken Chettinad');
+onSnapshot(docRef48,(doc)=>
+{
+    document.getElementById('chickenchettinad').innerHTML = (doc.data().Availability);
+})
+
+const docRef49 = doc(db,'The Bistro','Mushroom Masala');
+onSnapshot(docRef49,(doc)=>
+{
+    document.getElementById('mushroommasala').innerHTML = (doc.data().Availability);
+})
+
+const docRef50 = doc(db,'The Bistro','Uttapam');
+onSnapshot(docRef50,(doc)=>
+{
+    document.getElementById('uttapam').innerHTML = (doc.data().Availability);
+})
+
+const docRef51 = doc(db,'The Bistro','Chicken 65');
+onSnapshot(docRef51,(doc)=>
+{
+    document.getElementById('chicken 65').innerHTML = (doc.data().Availability);
+})
+
+const docRef52 = doc(db,'The Bistro','Gobi Manchurian');
+onSnapshot(docRef52,(doc)=>
+{
+    document.getElementById('gobimanchurian').innerHTML = (doc.data().Availability);
+})
+
+const docRef53 = doc(db,'The Bistro','Rasgulla');
+onSnapshot(docRef53,(doc)=>
+{
+    document.getElementById('rasgulla').innerHTML = (doc.data().Availability);
+})
+
+const docRef54 = doc(db,'The Bistro','Chicken Kebab');
+onSnapshot(docRef54,(doc)=>
+{
+    document.getElementById('chickenkebab').innerHTML = (doc.data().Availability);
+})
+
+const docRef55 = doc(db,'The Bistro','Prawn Curry');
+onSnapshot(docRef55,(doc)=>
+{
+    document.getElementById('prawncurry').innerHTML = (doc.data().Availability);
+})
+
+const docRef56 = doc(db,'The Bistro','Mutton Rogan Josh');
+onSnapshot(docRef56,(doc)=>
+{
+    document.getElementById('muttonroganjosh').innerHTML = (doc.data().Availability);
+})
+
+const docRef57 = doc(db,'The Bistro','Chicken Tandoori');
+onSnapshot(docRef57,(doc)=>
+{
+    document.getElementById('chickentandoori').innerHTML = (doc.data().Availability);
+})
+
+const docRef58 = doc(db,'The Cafe','Dum Aloo');
+onSnapshot(docRef58,(doc)=>
+{
+    document.getElementById('dumaloo').innerHTML = (doc.data().Availability);
+})
+
+const docRef59 = doc(db,'The Cafe','Chicken Kofta');
+onSnapshot(docRef59,(doc)=>
+{
+    document.getElementById('chickenkofta').innerHTML = (doc.data().Availability);
+})
+
+const docRef60 = doc(db,'The Cafe','Paratha');
+onSnapshot(docRef60,(doc)=>
+{
+    document.getElementById('paratha').innerHTML = (doc.data().Availability);
+})
+
+const docRef61 = doc(db,'The Cafe','Chicken Seekh Kebab');
+onSnapshot(docRef61,(doc)=>
+{
+    document.getElementById('chickenseekhkebab').innerHTML = (doc.data().Availability);
+})
+
+const docRef62 = doc(db,'The Cafe','Malabar Fish Curry');
+onSnapshot(docRef62,(doc)=>
+{
+    document.getElementById('malabarfishcurry').innerHTML = (doc.data().Availability);
+})
+
+const docRef63 = doc(db,'The Cafe','Chicken Lollipop');
+onSnapshot(docRef63,(doc)=>
+{
+    document.getElementById('chickenlollipop').innerHTML = (doc.data().Availability);
+})
+
+const docRef64 = doc(db,'The Cafe','Aloo Matar');
+onSnapshot(docRef64,(doc)=>
+{
+    document.getElementById('aloomatar').innerHTML = (doc.data().Availability);
+})
+
+const docRef65 = doc(db,'The Cafe','Chicken Reshmi Kebab');
+onSnapshot(docRef65,(doc)=>
+{
+    document.getElementById('chickenreshmikebab').innerHTML = (doc.data().Availability);
+})
+
+const docRef66 = doc(db,'The Cafe','Sambar');
+onSnapshot(docRef66,(doc)=>
+{
+    document.getElementById('sambar').innerHTML = (doc.data().Availability);
+})
+
+const docRef67 = doc(db,'The Cafe','Mix Veg');
+onSnapshot(docRef67,(doc)=>
+{
+    document.getElementById('mixveg').innerHTML = (doc.data().Availability);
+})
+
+
+
+
+
+
+
+
+
+
+const colRef = collection(db,'addcanteen');
+onSnapshot(colRef,(snapshot)=>{
+  
+  let canteens = [];
+  snapshot.docs.forEach((doc)=>{
+    console.log(canteens);
+    
+    canteens.push({...doc.data(),id:doc.id})
+  })
+    for (let i = 7;i<canteens.length+7;i++){
+
+
+    var myycant = `<div class = "food-items">
+                <img data-toggle="tooltip"data-placement="left" title="${canteens[i-7].nameofcanteen}"src=${canteens[i-7].url}  alt="">
+                <div class = "details">
+                    <div class = "details-sub">
+                        <h5>${canteens[i-7].nameofcanteen}</h5>
+                        <h5 id ="statuss${i}" class = "price">${canteens[i-7].statussss}</h5>
+                        
+
+                    </div>
+                    <p>${canteens[i-7].description}</p>
+                    <div style ="margin-left : 375px;padding-bottom:0px;"> 
+                        <p style="padding-left: 12px;" id ="votesu${i}">0</p>
+                        <button style="background: white;border-color:white;"data-toggle="tooltip"data-placement="bottom" title="like" id ="votesuu${i}" class="upvote" ><img style ="height: 30px;" src="thumbsup.jpg" alt="Upvote"></button>
+                        
+
+                        
+                    </div>
+                    
+                    
+                   
+                    <button id="pop-menu${i}"><a>Menu</a></button>
+                    <button><a style = "text-decoration: none;"  href="indexx${i}.html">Reviews</a></button>
+                    
+                    
+                    
+                </div>
+                
+
+
+            </div>`
+
+            var divc=document.createElement("div");
+            divc.innerHTML=myycant;
+            document.getElementById("addCanteen").appendChild(divc);
+            console.log(myycant);
+
+            onAuthStateChanged(auth,(user)=>{
+    if (!user){
+        location.replace("index.html");
+       
+      
+       
+    }
+    else{
+      const uid = user.uid;
+      var counteru7 =  0;
+      var x= "votesuu"+i;
+      
+      
+     
+     document.getElementById(x).addEventListener('click',function(){
+    if( counteru7==0){
+        
+        
+        counteru7++;
+
+        }
+        else if(counteru7 == 1) {
+            counteru7--;
+
+
+        }
+            
+        setDoc(doc(db,canteens[i-7].nameofcanteen,uid),{
+           Vote:counteru7,
+          })
+          .then(()=>{
+            const colRef = collection(db,canteens[i-7].nameofcanteen);
+        getDocs(colRef)
+         .then((snapshot) =>{
+        let votes7 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes7.push({...doc.data()});          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes7.length;i++){
+                  
+                     c1 = c1 + votes7[i].Vote;
+                   }
+                   var y = "votesu"+i;
+                   document.getElementById(y).innerHTML = c1;
+                  
+                               
+});            
+          })
+        });
+
+      }
+    });
+
+    function getalldata7(){
+  const colRef7 = collection(db,canteens[i-7].nameofcanteen);
+  getDocs(colRef7)
+    .then((snapshot) =>{
+        let votes7 =[]
+        snapshot.docs.forEach((doc)=>{
+            votes7.push({...doc.data()});
+          
+
+                   })
+                   let c1 = 0;
+                   for (let i = 0;i<votes7.length;i++){
+                  
+                     c1 = c1 + votes7[i].Vote;
+                   }
+                   var y = "votesu"+i;
+                   document.getElementById(y).innerHTML = c1;
+                  
+                  
+
+        
+                  
+});
+}
+
+window.onload = getalldata7(); 
+
+            
+            
+
+          
+          
+         
+  }
+
+
+
+
+ 
+  document.getElementById("pop-menu7").addEventListener("click",()=>{
+    document.getElementById("getpop7").classList.remove('popup-canteen');
+    document.getElementById("getpop7").classList.add('openPopUp');
+
+})
+document.getElementById("getpop7-c").addEventListener("click",()=>{
+    document.getElementById("getpop7").classList.add('popup-canteen');
+    document.getElementById("getpop7").classList.remove('openPopUp');
+
+}) 
+
+document.getElementById("pop-menu8").addEventListener("click",()=>{
+    document.getElementById("getpop8").classList.remove('popup-canteen');
+    document.getElementById("getpop8").classList.add('openPopUp');
+
+})
+document.getElementById("getpop8-c").addEventListener("click",()=>{
+    document.getElementById("getpop8").classList.add('popup-canteen');
+    document.getElementById("getpop8").classList.remove('openPopUp');
+
+})   
+
+
+document.getElementById("pop-menu9").addEventListener("click",()=>{
+    document.getElementById("getpop9").classList.remove('popup-canteen');
+    document.getElementById("getpop9").classList.add('openPopUp');
+
+})
+document.getElementById("getpop9-c").addEventListener("click",()=>{
+    document.getElementById("getpop9").classList.add('popup-canteen');
+    document.getElementById("getpop9").classList.remove('openPopUp');
+
+})  
+
+document.getElementById("pop-menu10").addEventListener("click",()=>{
+    document.getElementById("getpop10").classList.remove('popup-canteen');
+    document.getElementById("getpop10").classList.add('openPopUp');
+
+})
+document.getElementById("getpop10-c").addEventListener("click",()=>{
+    document.getElementById("getpop10").classList.add('popup-canteen');
+    document.getElementById("getpop10").classList.remove('openPopUp');
+
+})  
+
+
+document.getElementById("pop-menu11").addEventListener("click",()=>{
+    document.getElementById("getpop11").classList.remove('popup-canteen');
+    document.getElementById("getpop11").classList.add('openPopUp');
+
+})
+document.getElementById("getpop11-c").addEventListener("click",()=>{
+    document.getElementById("getpop11").classList.add('popup-canteen');
+    document.getElementById("getpop11").classList.remove('openPopUp');
+
+})  
+
+
+
+
+
+
+
+
+})
+
+
+
+
+
+      </script>
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+          
+
+</body>
+</html>
+
+

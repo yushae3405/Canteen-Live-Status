@@ -1,0 +1,60 @@
+*{
+    padding :0;
+    margin:0;
+    
+}
+
+
+#votesu,#votesu2,#votesu3,#votesu4,#votesu5,#votesu6,#votesu7,#votesu8,#votesu9,#votesu10,#votesu11,#votesu12{
+    font-size:20px;
+    font-weight: bolder;
+
+}
+#votesd,#votesd2,#votesd3,#votesd4,#votesd5,#votesd6,#votesd7,#votesd8,#votesd9,#votesd10,#votesd11,#votesd12{
+    font-size:20px;
+    font-weight: bolder;
+
+}
+
+
+.fle{
+    display:flex;
+   
+}
+
+
+
+.upvote{
+    background-color: green;
+    
+}
+
+.flu {
+margin-right: 5px;
+text-align: center;
+}
+.downvote{
+    background-color: red;
+  
+}
+
+.upvote:focus{
+    outline:none;
+
+
+}
+
+.fld{
+    text-align: center;
+}
+    
+    
+
+.upvote img{
+    height: 10px;
+}
+
+
+
+
+

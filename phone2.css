@@ -1,0 +1,17 @@
+
+.navbar{
+    flex-direction: column;
+}
+
+#logo{
+    display:none;
+}
+
+.navbar div button{
+    margin-left: 700px;
+    margin-top: 5px;
+   
+}
+
+
+

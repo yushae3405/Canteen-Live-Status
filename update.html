@@ -1,0 +1,442 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CLS</title>
+    
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="update.css">
+<link rel="stylesheet" media="screen and (max-width:1300px)" href="phone2.css">
+
+
+    
+</head>
+<body>
+    <div class="full-page">
+        <div  style = "background:translucent"class = "navbar">
+            <div>
+                <button class="btn btn-danger" data-target="#mymodelll" data-toggle ="modal">Log Out</button>
+                <div class = "modal fade" id = "mymodelll">
+                    <div class = "modal-dialog modal-dialog-centered">
+                        <div class = "modal-content">
+                            <div class = "modal-header">
+                                <h3 class = " text-primary">Logout</h3>
+                                
+                                
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+    
+    
+    
+    
+    
+                            </div>
+                            <div class ="modal-body">
+                                <h6>Are you sure you want to log out?</h6>
+                           </div>                         
+                           <div class ="modal-footer justify-content-center" >
+                            <button id = "logout" class = "btn btn-danger  " data-dismiss="modal" >LOG OUT</button>
+    
+                           </div>
+    
+                         </div>
+    
+    
+                    </div>
+    
+    
+    
+                </div>
+    
+    
+    
+            </div>
+            
+        
+        
+        <nav >
+            <ul id='MenuItems'>
+                <li><a href='#update'>Update</a></li>
+                <li><a href='#canten'>Add Canteens</a></li>
+                <li><a href='availability.html'>Availability</a></li>            
+            </ul>
+        </nav>
+            <div>
+                <img data-toggle="tooltip"data-placement="left" title="Savory Corner" id ="logo" src="logo.jpg" alt="error">
+            </div>
+            
+        </div>
+        <section style="margin-top: 100px; margin-right: 180px;" id ="update">
+            <div  class = form-box>
+                <div class = "form-value">
+                    <form class ="update"action="">
+                        <h2>Update Status</h2>
+                        <div class="inputbox">
+                            <input type = "text"data-toggle="tooltip"data-placement="left" title="Canteen name " name ="id" autocomplete="off"required>
+                            <label for = "">Canteen Name</label>
+                        </div>
+                       
+
+                        
+                        
+                        <div class="inputbox">
+                            <input type = "text" data-toggle="tooltip"data-placement="left" title="OPEN or CLOSE" id ="ids" name ="ids" autocomplete="off" required>
+                            <label for = "">Status Of Canteen</label>
+                            
+                        </div>
+                        
+                        <button id = "buton" data-toggle="tooltip"data-placement="left" title="Change Status">Change Status</button>
+
+
+
+                    </form>
+                </div>
+            </div>
+         </section>
+
+         <section id="canten">
+            <h1 class="h-primary center">Add Canteen</h1>
+            <div id="contact-box">
+                <form id = "addcanteen" action="">
+                    <div class="form-group">
+                        <label style = "color:black;" for="text">Name of canteen:    </label>
+                        <input type="text" data-toggle="tooltip"data-placement="left" title="Canteen name" name="name" id="nameofcanteen" placeholder="Enter canteen name">
+                    </div>
+                    <div class="form-group">
+                        <label style = "color:black;" for="text">Canteen URL:    </label>  
+                        <input type="text"data-toggle="tooltip"data-placement="left" title="Canteen Image URL" name="name" id="url" placeholder="Enter canteen url">
+                    </div>
+                    <div class="form-group">
+                        <label style = "color:black;" for="text">Status Of Canteen:        </label>  
+                        <input type="text"data-toggle="tooltip"data-placement="left" title="OPEN or CLOSE" name="name" id="statussss" placeholder="Enter canteen status">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label style = "color:black;" for="text">Description:       </label>
+                        <textarea name="description"data-toggle="tooltip"data-placement="left" title="Description Of Canteen" id="description" cols="30" rows="10"></textarea>
+                    </div>
+
+                    
+                    
+
+                    <!-- <div>
+                    <input type="text" id="namebox" class="nn">
+                        <label id="extlab" class="nn"></label>
+                        <button id="selbtn" class="selectphoto"><img id="one1"></button>
+                        <label id="upprogress" class="nn"></label>
+                        <button id="upbtn" class="ubtn">Upload Image</button>
+                    </div> -->
+                    <button data-toggle="tooltip"data-placement="left" title="Add Canteen" style =" border-width: 3px;font-weight: bolder; " class="btn btn-outline-primary  ">Add Canteen</button>
+                    
+                </form>
+               
+            </div>
+        </section>
+
+      
+
+
+                
+
+        
+
+   
+    
+</body>
+
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+    import { getDatabase ,set,ref ,update,child,remove} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+    import { getAuth,onAuthStateChanged,signOut} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-auth.js";
+    import { getFirestore,collection, getDocs,deleteDoc,doc,query,where,orderBy,getDoc,onSnapshot,updateDoc} from "https://www.gstatic.com/firebasejs/9.17.2/firebase-firestore.js";
+    import { getStorage, ref as sRef, uploadBytesResumable } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-storage.js";
+   
+    $('body').tooltip({
+        selector: '[data-toggle="tooltip"], [title]:not([data-toggle="popover"])',
+        trigger: 'hover',
+        container: 'body'
+    }).on('click mousedown mouseup', '[data-toggle="tooltip"], [title]:not([data-toggle="popover"])', function () {
+        $('[data-toggle="tooltip"], [title]:not([data-toggle="popover"])').tooltip('destroy');
+    }); 
+
+ 
+  
+    const firebaseConfig = {
+      apiKey: "AIzaSyCCqsEqT_0H3wXexOmlS9CmFNy4OmJy9hk",
+      authDomain: "canteen-live-status-77290.firebaseapp.com",
+      databaseURL: "https://canteen-live-status-77290-default-rtdb.firebaseio.com",
+      projectId: "canteen-live-status-77290",
+      storageBucket: "canteen-live-status-77290.appspot.com",
+      messagingSenderId: "615011554452",
+      appId: "1:615011554452:web:060c60f24a85b3fff89081",
+      measurementId: "G-Y6Q0M80LNX"     
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+    const database = getDatabase(app);
+
+
+   
+
+
+    
+
+
+
+
+    
+
+const updateForm = document.querySelector('.update')
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef = doc(db,'status1',updateForm.id.value);
+   
+    
+
+    updateDoc(docRef,{
+        statusss1 : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+
+
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef2 = doc(db,'status2',updateForm.id.value);
+   
+    updateDoc(docRef2,{
+
+        statusss2 : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef3 = doc(db,'status3',updateForm.id.value);
+   
+    updateDoc(docRef3,{
+
+        statusss3 : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef4 = doc(db,'status4',updateForm.id.value);
+   
+    updateDoc(docRef4,{
+
+        statusss4 : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef5 = doc(db,'status5',updateForm.id.value);
+   
+    updateDoc(docRef5,{
+
+        statusss5 : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef6 = doc(db,'status6',updateForm.id.value);
+   
+    updateDoc(docRef6,{
+
+        statusss6 : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef7 = doc(db,'addcanteen',updateForm.id.value);
+   
+    updateDoc(docRef7,{
+
+        statussss : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef8 = doc(db,'addcanteen',updateForm.id.value);
+   
+    updateDoc(docRef8,{
+
+        statussss : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+
+        
+    })
+
+
+    
+})
+
+
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef9 = doc(db,'addcanteen',updateForm.id.value);
+   
+    updateDoc(docRef9,{
+
+        statussss: updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef10 = doc(db,'addcanteen',updateForm.id.value);
+   
+    updateDoc(docRef10,{
+
+        statussss : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+
+updateForm.addEventListener('submit',(e) =>{
+    e.preventDefault()
+
+    const docRef11 = doc(db,'addcanteen',updateForm.id.value);
+   
+    updateDoc(docRef11,{
+
+        statussss : updateForm.ids.value
+
+    })
+    .then(() =>{
+        updateForm.reset()
+    })
+
+
+    
+})
+
+
+   
+    </script>
+    <script type ="module" src="update.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script type ="module" src="maintainerlogout.js"></script>
+</html>
